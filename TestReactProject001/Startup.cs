@@ -32,6 +32,7 @@ namespace TestReactProject001
           
             services.AddDbContext<APIContext>(options =>
         options.UseSqlServer(Configuration.GetConnectionString("APIDatabase")));
+            services.AddControllers();
 
         }
 

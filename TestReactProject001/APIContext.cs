@@ -12,5 +12,7 @@ namespace TestReactProject001
     public class APIContext : DbContext
     {
         public DbSet<Users> Users {get;set;}
+        public APIContext(DbContextOptions<APIContext> options) : base(options)
+        { }
     }
 }
